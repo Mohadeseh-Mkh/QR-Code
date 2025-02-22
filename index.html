@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor QR Code Card</title>
+    <style>
+        @font-face {
+            font-family: Outfit;
+            src: url(https://fonts.google.com/specimen/Outfit);
+        }
+        body{
+            font-family: "Outfit", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh ;
+            background-color: #d6e2f0; /* Light blue background */
+            /* width:1440px; */
+
+        }
+        .card{
+            background-color: white;
+            padding: 1em;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 24em;
+            width: 14em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .qr-code {
+            width: 15em;
+            height: 15em;
+            margin-bottom:1em ;
+            border-radius: 12px;
+            align-items: center;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 1em;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .description {
+            color: #7b8894; /* Grayish blue color */
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0.5em;
+        }
+
+        @media only screen and (max-width:450px){
+            body{
+                width: 390px;
+                display: flex;
+                align-items: center;
+                margin: 3px;
+            }
+            .card{
+                width:70%;
+                height: auto;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body >
+
+    <div class="card">
+        <img class="qr-code" src="/qr-code-component-main/qr-code-component-main/images/image-qr-code.png" alt="QR Code">
+        <div class="title">
+            Improve your front-end <br>
+            skills by building projects
+        </div>
+        <div class="description">
+            Scan the QR code to visit Frontend <br>
+            Mentor and take your coding skills to the next level
+        </div>
+    </div>
+
+</body>
+</html>
